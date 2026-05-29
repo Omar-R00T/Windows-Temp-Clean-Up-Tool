@@ -28,7 +28,7 @@ The tool loops through both the current User Profile (`%temp%`) and the System-w
 
 ## How To Use It?
 
-* **Because modifying systemic assets inside `C:\Windows\Temp` requires elevated security tokens, the script contains an integrated privilege guard.**
+* **Because modifying systemic assets inside `C:\Windows\Temp` requires elevated privileges, the script contains an integrated privilege guard.**
 * **Download `Temp-CleanUp.bat`.**
 * **Right-click the script and select "Run as Administrator".**
 * **Follow the automated real-time tracking logs until the success banner is displayed. Then press any key to exit the script.**
