@@ -49,12 +49,12 @@ The tool loops through both the current User Profile (`%temp%`) and the System-w
 
 To maintain complete supply-chain security and verify that your downloaded script is authentic, official, and untampered with, you can check its Hash-Value using Windows native CertUtil tool.
 
-* # Official Release Hashes (v1.0.0)
+* ## Official Release Hashes (v1.0.0)
 
     * File Name: Temp-CleanUp.bat
     * SHA-256 Checksum: fd8e4968d27fb47f83e46647736cc812b5e399a92cd4981293fc60f5c343d6f6
 
-* # How to Verify:
+* ## How to Verify:
 
   * Open a `command prompt` or `PowerShell` and run the following command:
   * `certutil -hashfile "path\to\Temp-CleanUp.bat" SHA256`
