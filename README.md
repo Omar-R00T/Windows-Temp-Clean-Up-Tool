@@ -31,6 +31,10 @@ The tool loops through both the current User Profile (`%temp%`) and the System-w
   `\"@path\" >nul 2>&1`: Encapsulates data tokens in clean escape quotes to survive nested string manipulation, executing the deletion silently so locked files do not clutter the screen with access errors.
 
   `&& echo [DELETED]: @file`: Leverages conditional execution handles so an entry is only printed to your terminal screen if the deletion was a verified success.
+  
+## Screenshot
+
+![Temp CleanUp Tool in action](Temp-CleanUp-Script-ScreenShot.png)
 
 ## How To Use It?
 
