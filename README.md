@@ -18,18 +18,18 @@ A Robust Windows Batch utility designed to safely analyze and purge temporary fi
 
 The tool loops through both the current User Profile (`%temp%`) and the System-wide Windows temporary repository (`C:\Windows\Temp`). 
 
-cmd
-forfiles /p "%%~G" /s /d -3 /c "cmd /c del /q /f \"@path\" >nul 2>&1 && echo [DELETED]: @file"
-  forfiles /s /d -3: Recursively evaluates target paths looking for items with a last-modified date older than 3 days.
 
-  \"@path\" >nul 2>&1: Encapsulates data tokens in clean escape quotes to survive nested string manipulation, executing the deletion silently so locked files do not clutter the screen with access errors.
+`forfiles /p "%%~G" /s /d -3 /c "cmd /c del /q /f \"@path\" >nul 2>&1 && echo [DELETED]: @file"`
+  `forfiles /s /d -3`: Recursively evaluates target paths looking for items with a last-modified date older than 3 days.
 
-  && echo [DELETED]: @file: Leverages conditional execution handles so an entry is only printed to your terminal screen if the deletion was a verified success.
+  `\"@path\" >nul 2>&1`: Encapsulates data tokens in clean escape quotes to survive nested string manipulation, executing the deletion silently so locked files do not clutter the screen with access errors.
+
+  `&& echo [DELETED]: @file`: Leverages conditional execution handles so an entry is only printed to your terminal screen if the deletion was a verified success.
 
 ## How To Use It?
 
-* **Because modifying systemic assets inside C:\Windows\Temp requires elevated security tokens, the script contains an integrated privilege guard.**
-* **Download Temp-CleanUp.bat.**
+* **Because modifying systemic assets inside `C:\Windows\Temp` requires elevated security tokens, the script contains an integrated privilege guard.**
+* **Download `Temp-CleanUp.bat`.**
 * **Right-click the script and select "Run as Administrator".**
 * **Follow the automated real-time tracking logs until the success banner is displayed. Then press any key to exit the script.**
 
@@ -45,5 +45,4 @@ To maintain complete supply-chain security and verify that your downloaded scrip
 certutil -hashfile "path\to\Temp-CleanUp.bat" SHA256
   Example: certutil -hashfile "D:\Desktop\Temp-CleanUp.bat" SHA256
   output should be: fd8e4968d27fb47f83e46647736cc812b5e399a92cd4981293fc60f5c343d6f6
-    Compare your output hash string with the official checksum listed above. If they match perfectly, your tool is completely authentic and safe to execute!
-      If they don't match please remove the tool and do not run it.
+    **Security Notice: Compare your terminal's output hash string with the official checksum listed above. If they match perfectly, your tool is completely authentic and safe to execute. If they do not match, delete the file immediately and do not execute it.**
