@@ -45,4 +45,4 @@ To maintain complete supply-chain security and verify that your downloaded scrip
 * `certutil -hashfile "path\to\Temp-CleanUp.bat" SHA256`
   * Example: `certutil -hashfile "D:\Desktop\Temp-CleanUp.bat" SHA256`
   * Expected OutPut: `fd8e4968d27fb47f83e46647736cc812b5e399a92cd4981293fc60f5c343d6f6`
-    * **Security Notice: Compare your terminal's output hash string with the official checksum listed above. If they match perfectly, your tool is completely authentic and safe to execute. If they do not match, delete the file immediately and do not execute it.**
+  * # Security Notice: Compare your terminal's output hash string with the official checksum listed above. If they match perfectly, your tool is completely authentic and safe to execute. If they do not match, delete the file immediately and do not execute it.
