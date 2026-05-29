@@ -45,7 +45,7 @@ The tool loops through both the current User Profile (`%temp%`) and the System-w
 * **Right-click the script and select "Run as Administrator".**
 * **Follow the automated real-time tracking logs until the success banner is displayed. Then press any key to exit the script.**
 
-# Code Integrity & Verification
+## Code Integrity & Verification
 
 To maintain complete supply-chain security and verify that your downloaded script is authentic, official, and untampered with, you can check its Hash-Value using Windows native CertUtil tool.
 
