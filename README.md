@@ -67,4 +67,4 @@ To maintain complete supply-chain security and verify that your downloaded scrip
 
 ## License
 
-[MIT – use freely, but no warranty.] See the (./LICENSE) file.
+MIT – use freely, but no warranty. See the `LICENSE` file.
